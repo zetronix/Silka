@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     //---------------------------------Calendar
     calendar = new MyCalendar(this);
-    calendar->setGeometry(0,0,1000,1000);
+    calendar->setGeometry(50,50,1000,1000);
     //--------------------------------Humanoid
     human = new MyHumanoid(this);
     human->setGeometry(400,0,500,500);
