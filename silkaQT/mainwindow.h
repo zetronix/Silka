@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "mycalendar.h"
+#include "myhumanoid.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,9 +17,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+
+
 private:
     Ui::MainWindow *ui;
     MyCalendar* calendar;
-
+    MyHumanoid* human;
 };
 #endif // MAINWINDOW_H

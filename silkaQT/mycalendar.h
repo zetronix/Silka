@@ -1,21 +1,21 @@
 #ifndef MYCALENDAR_H
 #define MYCALENDAR_H
-
 #include <QWidget>
 #include <QCalendarWidget>
+#include <QLabel>
 
 class MyCalendar : public QWidget
 {
     Q_OBJECT
 public:
-    explicit MyCalendar(QWidget *parent = nullptr);
-
-signals:
-
-public slots:
+    MyCalendar(QWidget* parent = nullptr);
 
 private:
     QCalendarWidget* calendar;
+    QLabel* testLabel;
+private slots:
+    void updateLabel(const QDate&);
+
 };
 
 #endif // MYCALENDAR_H
