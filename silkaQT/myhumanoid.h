@@ -16,6 +16,14 @@ public slots:
 
 private:
     QLabel* humanoid;
+    QLabel* abs;
+    QLabel* arms;
+    QLabel* biceps;
+    QLabel* triceps;
+    QLabel* back;
+    QLabel* chest;
+    QLabel* legs;
+
 };
 
 #endif // MYHUMANOID_H
