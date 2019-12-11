@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    calendar = new MyCalendar(this);
+    calendar->setGeometry(0,0,500,500);
 }
 
 MainWindow::~MainWindow()

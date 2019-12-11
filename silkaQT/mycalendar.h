@@ -2,6 +2,7 @@
 #define MYCALENDAR_H
 
 #include <QWidget>
+#include <QCalendarWidget>
 
 class MyCalendar : public QWidget
 {
@@ -12,6 +13,9 @@ public:
 signals:
 
 public slots:
+
+private:
+    QCalendarWidget* calendar;
 };
 
 #endif // MYCALENDAR_H
