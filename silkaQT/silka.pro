@@ -19,12 +19,14 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     mycalendar.cpp \
-    myhumanoid.cpp
+    myhumanoid.cpp \
+    workout.cpp
 
 HEADERS += \
     mainwindow.h \
     mycalendar.h \
-    myhumanoid.h
+    myhumanoid.h \
+    workout.h
 
 FORMS += \
     mainwindow.ui

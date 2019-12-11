@@ -11,6 +11,8 @@ MyCalendar::MyCalendar(QWidget* parent) : QWidget(parent)
     testLabel->setGeometry(0,220,200,150);
 
     connect(calendar,SIGNAL(clicked(const QDate&)),this,SLOT(updateLabel(const QDate&)));
+
+
 }
 
 void MyCalendar::updateLabel(const QDate& date){
