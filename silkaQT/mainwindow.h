@@ -24,5 +24,7 @@ private:
     Ui::MainWindow *ui;
     MyCalendar* calendar;
     MyHumanoid* human;
+
+
 };
 #endif // MAINWINDOW_H

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QLabel>
+#include <QPushButton>
 
 class MyHumanoid : public QWidget
 {
@@ -13,16 +14,17 @@ public:
 signals:
 
 public slots:
+    void humanoidPushed();
 
 private:
-    QLabel* humanoid;
-    QLabel* abs;
-    QLabel* arms;
-    QLabel* biceps;
-    QLabel* triceps;
-    QLabel* back;
-    QLabel* chest;
-    QLabel* legs;
+    QPushButton* humanoid;
+    QPushButton* abs;
+    QPushButton* armsL,*armsR;
+    QPushButton* bicL, *bicR;
+    QPushButton* triL, *triR;
+    QPushButton* back;
+    QPushButton* chest;
+    QPushButton* legs;
 
 };
 

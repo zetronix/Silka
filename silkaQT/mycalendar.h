@@ -4,17 +4,19 @@
 #include <QCalendarWidget>
 #include <QLabel>
 
-class MyCalendar : public QWidget
+class MyCalendar : public QCalendarWidget
 {
     Q_OBJECT
 public:
     MyCalendar(QWidget* parent = nullptr);
 
 private:
-    QCalendarWidget* calendar;
-    QLabel* testLabel;
+    QList<QDate> dateList;
+
+
 private slots:
-    void updateLabel(const QDate&);
+    void updateList(const QDate&);
+    void paintCell(QPainter * painter, const QRect & rect, const QDate & date) const;
 
 };
 
