@@ -21,12 +21,12 @@ public slots:
 private:
     QPushButton* humanoid;
     BodyPartButton* abs;
-    QLabel* armsL,*armsR;
-    QLabel* bicL, *bicR;
-    QLabel* triL, *triR;
-    QLabel* back;
-    QLabel* chest;
-    QLabel* legs;
+    BodyPartButton* armsL,*armsR;
+    BodyPartButton* bicL, *bicR;
+    BodyPartButton* triL, *triR;
+    BodyPartButton* back;
+    BodyPartButton* chest;
+    BodyPartButton* legs;
 
     QPushButton* absButton;
     QPushButton* armLButton, *armRButton;

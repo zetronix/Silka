@@ -19,64 +19,35 @@ MyHumanoid::MyHumanoid(QWidget *parent) : QWidget(parent)
     abs = new BodyPartButton("abs", absSize,this);
 
 //==================================ARMS
-    /*
-    armsL = new QLabel(this);
-    armsR = new QLabel(this);
-    armsL->setGeometry(80,45,46,46);
-    armsR->setGeometry(164,45,46,46);
-    if(!pm.load(":/images/res/images/barki.png"))
-        qDebug()<<"Error - cannot load barki.png";
-    armsL->setPixmap(pm);
-    armsR->setPixmap(pm);
-    armsL->setEnabled(false);
-    armsR->setEnabled(false);
+    const QRect armLSize (80,45,46,46);
+    const QRect armRSize (164,45,46,46);
+    armsL = new BodyPartButton("barki", armLSize, this);
+    armsR = new BodyPartButton("barki", armRSize, this);
+    connect(armsL, SIGNAL(clicked()), armsR, SLOT(activeBodyPart()));
+    connect(armsR, SIGNAL(clicked()), armsL, SLOT(activeBodyPart()));
 
-    bicL = new QLabel(this);
-    bicR = new QLabel(this);
-    bicL->setGeometry(45,60,46,25);
-    bicR->setGeometry(200,60,46,25);
-    if(!pm.load(":/images/res/images/bic.png"))
-        qDebug()<<"Error - cannot load bic.png";
-    bicL->setPixmap(pm);
-    bicR->setPixmap(pm);
-    bicL->setEnabled(false);
-    bicR->setEnabled(false);
+    const QRect bicLSize (45,60,46,25);
+    const QRect bicRSize (200,60,46,25);
+    bicL = new BodyPartButton("bic", bicLSize, this);
+    bicR = new BodyPartButton("bic", bicRSize, this);
+    connect(bicL, SIGNAL(clicked()), bicR, SLOT(activeBodyPart()));
+    connect(bicR, SIGNAL(clicked()), bicL, SLOT(activeBodyPart()));
 
-    //bicL->setEnabled(false);
-    triL = new QLabel(this);
-    triR = new QLabel(this);
-    triL->setGeometry(25,90,73,21);
-    triR->setGeometry(200,90,73,21);
-    if(!pm.load(":/images/res/images/tric.png"))
-        qDebug()<<"Error - cannot load tric.png";
-    triL->setPixmap(pm);
-    triR->setPixmap(pm);
-    triL->setEnabled(false);
-    triR->setEnabled(false);
+    const QRect tricLSize (25,90,73,21);
+    const QRect tricRSize (200,90,73,21);
+    triL = new BodyPartButton("tric", tricLSize, this);
+    triR = new BodyPartButton("tric", tricRSize, this);
+    connect(triL, SIGNAL(clicked()), triR, SLOT(activeBodyPart()));
+    connect(triR, SIGNAL(clicked()), triL, SLOT(activeBodyPart()));
 
-    back = new QLabel(this);
-    back->setGeometry(50,110,68,97);
-    if(!pm.load(":/images/res/images/plecy.png"))
-        qDebug()<<"Error - cannot load plecy.png";
-    back->setPixmap(pm);
-    back->setEnabled(false);
+    const QRect backSize (50,100,68,97);
+    back = new BodyPartButton("plecy", backSize, this);
 
-    chest = new QLabel(this);
-    chest->setGeometry(100,70,88,57);
-    if(!pm.load(":/images/res/images/klata.png"))
-        qDebug()<<"Error - cannot load klata.png";
-    chest->setPixmap(pm);
-    chest->setEnabled(false);
+    const QRect chestSize (100,70,88,57);
+    chest = new BodyPartButton("klata", chestSize, this);
 
-
-    legs = new QLabel(this);
-    legs->setGeometry(85,200,135,144);
-    if(!pm.load(":/images/res/images/legs.png"))
-        qDebug()<<"Error - cannot load legs.png";
-    legs->setPixmap(pm);
-    legs->setEnabled(false);
-    */
-
+    const QRect legSize (85,200,135, 144);
+    legs = new BodyPartButton("legs", legSize, this);
 }
 
 void MyHumanoid::humanoidPushed(){

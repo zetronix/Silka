@@ -19,6 +19,8 @@ private:
     QLabel* bodyPartLabel;
     QPixmap pm;
 
+
+
 };
 
 #endif // BODYPARTBUTTON_H
