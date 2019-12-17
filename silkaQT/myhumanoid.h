@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QLabel>
 #include <QPushButton>
+#include "bodypartbutton.h"
 
 class MyHumanoid : public QWidget
 {
@@ -15,16 +16,26 @@ signals:
 
 public slots:
     void humanoidPushed();
+    void setBodyPart(QLabel* bodyPart);
 
 private:
     QPushButton* humanoid;
-    QPushButton* abs;
-    QPushButton* armsL,*armsR;
-    QPushButton* bicL, *bicR;
-    QPushButton* triL, *triR;
-    QPushButton* back;
-    QPushButton* chest;
-    QPushButton* legs;
+    BodyPartButton* abs;
+    QLabel* armsL,*armsR;
+    QLabel* bicL, *bicR;
+    QLabel* triL, *triR;
+    QLabel* back;
+    QLabel* chest;
+    QLabel* legs;
+
+    QPushButton* absButton;
+    QPushButton* armLButton, *armRButton;
+    QPushButton* bicLButton, *bicRButton;
+    QPushButton* triLButton, *triRButton;
+    QPushButton* backButton;
+    QPushButton* chestButton;
+    QPushButton* legsButton;
+
 
 };
 
