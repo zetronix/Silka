@@ -17,7 +17,9 @@ MainWindow::MainWindow(QWidget *parent)
     human = new MyHumanoid(this);
     human->setGeometry(400,0,500,500);
 
-
+    testLabel = new QLabel(this);
+    testLabel->setGeometry(50,400,200,50);
+    testLabel->setText(QString("Hello World"));
 
 }
 

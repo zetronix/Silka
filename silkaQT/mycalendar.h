@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <QCalendarWidget>
 #include <QLabel>
+#include "workout.h"
 
 
 class MyCalendar : public QCalendarWidget
@@ -13,6 +14,8 @@ public:
 
 private:
     QList<QDate> dateList;
+    QVector<Workout> workouts;
+
 
 
 private slots:

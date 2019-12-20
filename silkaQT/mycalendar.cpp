@@ -24,5 +24,4 @@ void MyCalendar::paintCell(QPainter * painter, const QRect & rect, const QDate &
         }
         else
             QCalendarWidget::paintCell(painter, rect, date);
-
 }

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "mycalendar.h"
 #include "myhumanoid.h"
+#include "workout.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,6 +25,8 @@ private:
     Ui::MainWindow *ui;
     MyCalendar* calendar;
     MyHumanoid* human;
+
+    QLabel* testLabel;
 
 
 };
