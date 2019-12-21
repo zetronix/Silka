@@ -27,3 +27,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::setTextOnLabel(QString &string){
+    testLabel->setText(string);
+}

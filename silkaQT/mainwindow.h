@@ -18,6 +18,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void setTextOnLabel(QString& string);
+
 private slots:
 
 

@@ -26,3 +26,7 @@ void Workout::removePartFromTrainig(workoutType type){
         qDebug()<<"Cannot remove element - element doesnt exist";
      }
 }
+
+const QDate& Workout::getDate() const{
+    return date;
+}

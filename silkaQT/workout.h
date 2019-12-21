@@ -15,6 +15,7 @@ public:
     Workout(QDate& date, workoutType type);
     void addPartToTraining(workoutType type);
     void removePartFromTrainig(workoutType type);
+    const QDate& getDate() const;
 };
 
 #endif // WORKOUT_H

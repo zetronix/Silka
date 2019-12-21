@@ -793,6 +793,10 @@ moc_bodypartbutton.cpp: ../silkaQT/bodypartbutton.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qfiledevice.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qvector2d.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qtouchdevice.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QPushButton \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qicon.h \
 		moc_predefs.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/bin/moc
 	/home/lukas/Qt5.13.2/5.13.2/gcc_64/bin/moc $(DEFINES) --include /home/lukas/Pulpit/QtProjects/Silka/build-silka-Desktop-Debug/moc_predefs.h -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/mkspecs/linux-g++ -I/home/lukas/Pulpit/QtProjects/Silka/silkaQT -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include/QtWidgets -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include/QtGui -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include/QtCore -I. -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/x86_64-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../silkaQT/bodypartbutton.h -o moc_bodypartbutton.cpp
@@ -912,6 +916,9 @@ moc_mainwindow.cpp: ../silkaQT/mainwindow.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QLabel \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qframe.h \
+		../silkaQT/workout.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDate \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector \
 		../silkaQT/myhumanoid.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QPushButton \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qpushbutton.h \
@@ -1031,6 +1038,9 @@ moc_mycalendar.cpp: ../silkaQT/mycalendar.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QLabel \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qframe.h \
+		../silkaQT/workout.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDate \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector \
 		moc_predefs.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/bin/moc
 	/home/lukas/Qt5.13.2/5.13.2/gcc_64/bin/moc $(DEFINES) --include /home/lukas/Pulpit/QtProjects/Silka/build-silka-Desktop-Debug/moc_predefs.h -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/mkspecs/linux-g++ -I/home/lukas/Pulpit/QtProjects/Silka/silkaQT -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include/QtWidgets -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include/QtGui -I/home/lukas/Qt5.13.2/5.13.2/gcc_64/include/QtCore -I. -I/usr/include/c++/8 -I/usr/include/x86_64-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/x86_64-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../silkaQT/mycalendar.h -o moc_mycalendar.cpp
@@ -1277,7 +1287,12 @@ bodypartbutton.o: ../silkaQT/bodypartbutton.cpp ../silkaQT/bodypartbutton.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qfile.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qfiledevice.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qvector2d.h \
-		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qtouchdevice.h
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qtouchdevice.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QPushButton \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bodypartbutton.o ../silkaQT/bodypartbutton.cpp
 
 main.o: ../silkaQT/main.cpp ../silkaQT/mainwindow.h \
@@ -1395,6 +1410,9 @@ main.o: ../silkaQT/main.cpp ../silkaQT/mainwindow.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QLabel \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qframe.h \
+		../silkaQT/workout.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDate \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector \
 		../silkaQT/myhumanoid.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QPushButton \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qpushbutton.h \
@@ -1524,6 +1542,9 @@ mainwindow.o: ../silkaQT/mainwindow.cpp ../silkaQT/mainwindow.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QLabel \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qframe.h \
+		../silkaQT/workout.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDate \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector \
 		../silkaQT/myhumanoid.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QPushButton \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qpushbutton.h \
@@ -1646,7 +1667,9 @@ mycalendar.o: ../silkaQT/mycalendar.cpp ../silkaQT/mycalendar.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/QLabel \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtWidgets/qframe.h \
+		../silkaQT/workout.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDate \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDebug \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/QPainter \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtGui/qpainter.h \
@@ -1816,7 +1839,28 @@ workout.o: ../silkaQT/workout.cpp ../silkaQT/workout.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qstringlist.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qregexp.h \
 		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QVector \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QDebug \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qdebug.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qmap.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qtextstream.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qiodevice.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qobject.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qmetatype.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qvariant.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qset.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt5.13.2/5.13.2/gcc_64/include/QtCore/QtAlgorithms
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o workout.o ../silkaQT/workout.cpp
 
 qrc_rsc.o: qrc_rsc.cpp 

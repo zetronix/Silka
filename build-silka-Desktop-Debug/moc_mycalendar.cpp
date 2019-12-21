@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MyCalendar_t {
-    QByteArrayData data[8];
-    char stringdata0[61];
+    QByteArrayData data[9];
+    char stringdata0[78];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,11 +39,13 @@ QT_MOC_LITERAL(3, 23, 9), // "paintCell"
 QT_MOC_LITERAL(4, 33, 9), // "QPainter*"
 QT_MOC_LITERAL(5, 43, 7), // "painter"
 QT_MOC_LITERAL(6, 51, 4), // "rect"
-QT_MOC_LITERAL(7, 56, 4) // "date"
+QT_MOC_LITERAL(7, 56, 4), // "date"
+QT_MOC_LITERAL(8, 61, 16) // "checkWorkoutList"
 
     },
     "MyCalendar\0updateList\0\0paintCell\0"
-    "QPainter*\0painter\0rect\0date"
+    "QPainter*\0painter\0rect\0date\0"
+    "checkWorkoutList"
 };
 #undef QT_MOC_LITERAL
 
@@ -53,7 +55,7 @@ static const uint qt_meta_data_MyCalendar[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -61,12 +63,14 @@ static const uint qt_meta_data_MyCalendar[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x08 /* Private */,
-       3,    3,   27,    2, 0x08 /* Private */,
+       1,    1,   29,    2, 0x08 /* Private */,
+       3,    3,   32,    2, 0x08 /* Private */,
+       8,    1,   39,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QDate,    2,
     QMetaType::Void, 0x80000000 | 4, QMetaType::QRect, QMetaType::QDate,    5,    6,    7,
+    QMetaType::Void, QMetaType::QDate,    7,
 
        0        // eod
 };
@@ -79,6 +83,7 @@ void MyCalendar::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->updateList((*reinterpret_cast< const QDate(*)>(_a[1]))); break;
         case 1: _t->paintCell((*reinterpret_cast< QPainter*(*)>(_a[1])),(*reinterpret_cast< const QRect(*)>(_a[2])),(*reinterpret_cast< const QDate(*)>(_a[3]))); break;
+        case 2: _t->checkWorkoutList((*reinterpret_cast< const QDate(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -113,13 +118,13 @@ int MyCalendar::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
