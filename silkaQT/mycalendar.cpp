@@ -9,9 +9,6 @@ MyCalendar::MyCalendar(QWidget* parent) : QCalendarWidget(parent)
 {
     connect(this,SIGNAL(clicked(const QDate&)),this,SLOT(checkWorkoutList(const QDate&)));
     //testing
-    QDate date(2019,12,24);
-    Workout testWorkout(date,workoutType::ABS);
-    workouts.push_back(testWorkout);
 }
 
 void MyCalendar::updateList(const QDate& date){
@@ -19,7 +16,7 @@ void MyCalendar::updateList(const QDate& date){
     updateCell(date);
 }
 
-void MyCalendar::paintCell(QPainter * painter, const QRect & rect, const QDate & date) const{
+void MyCalendar::paintCell(QPainter* painter, const QRect & rect, const QDate & date) const{
         if(dateList.contains(date)){
             painter->save();
             painter->setBrush(Qt::red);
@@ -32,9 +29,13 @@ void MyCalendar::paintCell(QPainter * painter, const QRect & rect, const QDate &
 }
 
 void MyCalendar::checkWorkoutList(const QDate& date) {
+        //check Workout vector
+    qDebug()<<"checkWorkoutList";
     for(int i=0; i<workouts.size(); i++){
-        if(workouts.at(i).getDate() == date){
-            updateList(date);
-        }
+         if(workouts[i].getDate() == date){
+            qDebug()<<"emit signal";
+            emit emitWorkoutType(workouts[i].getWorkouts());
+            break;
+         }
     }
 }

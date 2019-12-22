@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTextBrowser>
 #include "mycalendar.h"
 #include "myhumanoid.h"
 #include "workout.h"
@@ -18,9 +19,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void setTextOnLabel(QString& string);
 
 private slots:
+    void setTextOnLabel(const QVector<workoutType>&);
 
 
 private:
@@ -28,7 +29,9 @@ private:
     MyCalendar* calendar;
     MyHumanoid* human;
 
-    QLabel* testLabel;
+    QTextBrowser* workoutScreen;
+    QPushButton* addNewWorkout;
+    QPushButton* removeWorkout;
 
 
 };

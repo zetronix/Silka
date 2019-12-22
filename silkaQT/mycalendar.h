@@ -1,8 +1,8 @@
-#ifndef MYCALENDAR_H
-#define MYCALENDAR_H
+#pragma once
 #include <QWidget>
 #include <QCalendarWidget>
 #include <QLabel>
+#include <QVector>
 #include "workout.h"
 
 
@@ -16,11 +16,13 @@ private:
     QList<QDate> dateList;
     QVector<Workout> workouts;
 
-
 private slots:
     void updateList(const QDate&);
     void paintCell(QPainter * painter, const QRect & rect, const QDate & date) const;
+public slots:
     void checkWorkoutList(const QDate& date);
+
+signals:
+    void emitWorkoutType(const QVector<workoutType>&);
 };
 
-#endif // MYCALENDAR_H

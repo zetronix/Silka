@@ -1,9 +1,10 @@
-#ifndef WORKOUT_H
-#define WORKOUT_H
+#pragma once
 #include <QDate>
 #include <QVector>
 
 enum workoutType {BIC, TRIC, ARM, CHEST, BACK, ABS, LEGS};
+
+class MyCalendar;
 
 class Workout
 {
@@ -12,10 +13,12 @@ class Workout
 
 public:
     Workout();
-    Workout(QDate& date, workoutType type);
+    Workout(QDate date);
+    Workout(QDate& date, workoutType type, MyCalendar* calendar);
     void addPartToTraining(workoutType type);
     void removePartFromTrainig(workoutType type);
     const QDate& getDate() const;
-};
+    const QVector<workoutType>& getWorkouts();
 
-#endif // WORKOUT_H
+    bool operator==(const QDate& workout2) const;
+};
